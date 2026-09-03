@@ -1,0 +1,355 @@
+/* Agro Input Hub - Premium Luxury Dark-Eco Theme Core CSS Styling */
+
+:root {
+    --bg-main: #0d0f11;
+    --bg-card: #191c1f;
+    --bg-darker: #0f1112;
+    --text-white: #ffffff;
+    --text-muted: #a0aec0;
+    --primary-green: #28a745;
+    --gradient-green: linear-gradient(135deg, #1e7e34, #198754);
+    --border-color: #2d3238;
+}
+
+/* 🎯 કોર ગ્લોબલ રીસેટ */
+body {
+    background-color: var(--bg-main) !important;
+    color: #e2e8f0 !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/* 🌾 પ્રીમિયમ ગ્લોઇંગ બ્રાન્ડ લોગો સ્ટાઇલ */
+.premium-logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    gap: 12px;
+}
+
+.premium-logo-icon-wrapper {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium-logo-text-wrapper .logo-main-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.premium-logo-text-wrapper .logo-main-text span {
+    color: var(--primary-green);
+}
+
+.premium-logo-text-wrapper .logo-sub-text {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 🔒 લક્ઝરી કાર્ડ અને ટેબલ સ્ટાઇલ */
+.card-custom {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ⚡ ક્વિક ઓપરેશન્સ મેન્યુ બટન્સ હોવર ગ્લો */
+.quick-actions-btn {
+    text-decoration: none !important;
+    display: block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.quick-actions-btn:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-green) !important;
+    box-shadow: 0 12px 25px rgba(40, 167, 69, 0.15) !important;
+}
+
+/* 📋 પ્રીમિયમ ફોર્મ ઇનપુટ્સ */
+.form-control, .form-select {
+    background-color: var(--bg-darker) !important;
+    border: 1px solid var(--border-color) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-green) !important;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.25) !important;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #4b5563 !important;
+}
+
+/* 🗂️ રિસ્પોન્સિવ ડાર્ક ટેબલ ફિક્સ */
+.table-responsive {
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+/* 🔒 ફિક્સ બોટમ ફૂટર સ્ટીકી લેયર */
+.fixed-bottom-footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 13px;
+    z-index: 1030;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+/* ⚙️ એનિમેટેડ ગિયર અને આઇકોન સેટિંગ્સ */
+.profile-gear-btn {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.profile-gear-btn:hover {
+    color: var(--primary-green);
+    transform: rotate(45deg);
+}
+/* 🎯 ફોર્મના ઝાંખા લેબલ એકદમ ક્લીન સફેદ કરવા માટે */
+.card-custom label, .card-custom .small {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+}/* 🎯 ટેબલની અંદર લોકેશન (Loc: kondh) અને ઝાંખા અક્ષરો વંચાય તે માટેનો CSS ફિક્સ */
+.table-custom-fix td small.text-muted, 
+.table-dark td small.text-muted,
+.table td small.text-muted {
+    color: #34d399 !important; /* મસ્ત ચમકતો ગ્રીન-મિન્ટ કલર */
+    font-weight: 700 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    letter-spacing: 0.5px;
+}
+
+/* ફોર્મ અને ટેબલના લેબલ જો હજી પણ ઝાંખા દેખાતા હોય તો એનો ફિક્સ */
+.card-custom label, 
+.card-custom .form-label {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+/* 🌾 ફિક્સ નેવિગેશન બાર અને પ્રીમિયમ ગ્લોઇંગ બોર્ડર લાઇન ફિક્સ */
+.navbar.custom-nav.fixed-top {
+    background-color: #191c1f !important;
+    /* 🎯 આછી લાઇનને હટાવીને 2px જાડી ગ્લોઇંગ બોર્ડર સેટ કરી */
+    border-bottom: 2px solid #28a745 !important; 
+    /* 🎯 કાળા બેકગ્રાઉન્ડ પર લાઇન મસ્ત ચમકે તે માટે નિયોન શેડો ઇફેક્ટ */
+    box-shadow: 0 4px 20px rgba(40, 167, 69, 0.25) !important; 
+    transition: all 0.3s ease;
+}
+
+/* જો ટેબલની બોર્ડર લાઇન પણ આછી આવતી હોય તો તેને ડાર્ક કરવા માટે */
+.table-custom-fix, 
+.table-bordered, 
+.table-custom-fix th, 
+.table-custom-fix td {
+    border: 1px solid #454d55 !important; /* લાઇટ ગ્રે માંથી બદલીને વિઝિબલ ડાર્ક ગ્રે બોર્ડર */
+}/* 🎯 હેડરના નાના સબ-હેડિંગ ટેક્સ્ટને એકદમ ક્લીન વિઝિબિલિટી આપવા માટે */
+.contact-header .text-muted, 
+.contact-header p.small,
+.contact-header font-monospace,
+.contact-header .font-monospace {
+    color: #cbd5e1 !important; /* મસ્ત બ્રાઇટ લાઇટ ગ્રે કલર */
+    opacity: 0.95 !important;  /* ટેક્સ્ટની ઓપેસિટી વધારી દીધી */
+    font-weight: 600 !important; /* અક્ષરો થોડા ઘટ્ટ કર્યા */
+    letter-spacing: 0.5px;
+}
+/* 🎯 ફીચર કાર્ડની અંદરના નાના ડિસ્ક્રિપ્શન લખાણને એકદમ ક્લીન વિઝિબિલિટી આપવા માટે */
+.feature-card p.text-muted, 
+.feature-card p.small,
+.feature-card .text-muted {
+    color: #cbd5e1 !important; /* મસ્ત બ્રાઇટ સિલ્વર-ગ્રે કલર */
+    opacity: 1 !important;      /* ઓપેસિટી ફૂલ કરી દીધી */
+    font-weight: 500 !important; /* અક્ષરો પર્ફેક્ટ રીડેબલ કર્યા */
+}
+/* 🎯 રિપોર્ટ પેજના ટેબલ ડેટા અને ઓડિટ નોટની વિઝિબિલિટી વધારવા માટે */
+.table-custom-fix td,
+.table-custom-fix td strong,
+.table-custom-fix td span,
+.table-custom-fix .text-muted-custom {
+    color: #cbd5e1 !important; /* મસ્ત બ્રાઇટ સિલ્વર-ગ્રે કલર */
+    opacity: 1 !important;
+}
+
+/* ટેબલની અંદરના ઓર્ડર કાઉન્ટ અને જથ્થાના આંકડા માટે */
+.table-custom-fix td.font-monospace {
+    color: #e2e8f0 !important; /* એકદમ ક્લીન વ્હાઇટ કલર */
+    font-weight: 600 !important;
+}
+
+/* 🎯 ઓડિટ નોટ (Audit Note) ની અંદરના નાના અક્ષરો માટે */
+.alert-warning.border-warning,
+.alert-warning.border-warning small,
+.alert-warning.border-warning strong {
+    color: #fef08a !important; /* લાઈટ પ્રીમિયમ ગોલ્ડન-યલો કલર જેથી તરત વંચાય */
+    opacity: 1 !important;
+    font-weight: 500 !important;
+}
+/* 🎯 એનાલિટિક્સ કાઉન્ટર કાર્ડ્સની અંદરના નાના સ્ટેટ્સ લખાણની વિઝિબિલિટી વધારવા માટે */
+.card-custom small,
+.card-custom small.text-muted,
+.card-custom span.text-muted,
+.card-custom .text-muted {
+    color: #cbd5e1 !important; /* મસ્ત બ્રાઇટ સિલ્વર-ગ્રે કલર */
+    opacity: 1 !important;      /* ઓપેસિટી ફૂલ કરીને બ્રાઇટ કર્યું */
+    font-weight: 500 !important; /* અક્ષરો પર્ફેક્ટ રીડેબલ કર્યા */
+}
+
+/* જો કાઉન્ટર કાર્ડ્સની અંદર ગ્રીન ટીક આઇકોન હોય તો તેને પણ બ્રાઇટ કરવો */
+.card-custom .fa-circle-check {
+    color: #34d399 !important; /* લાઇવ ગ્રીન ગ્લો */
+}
+/* 🎯 ઓર્ડર મેનેજમેન્ટ પેજના Invoice Synced બેજ અને અક્ષરોનો વિઝિબિલિટી ફિક્સ */
+.badge.bg-success-subtle.border.border-success {
+    background-color: rgba(40, 167, 69, 0.15) !important; /* હળવું લક્ઝરી ગ્રીન બેકગ્રાઉન્ડ */
+    border: 1px solid #28a745 !important;                /* મસ્ત ગ્લોઇંગ ગ્રીન બોર્ડર */
+    color: #34d399 !important;                           /* અક્ષરોને આપ્યો ચમકતો ગ્રીન-મિન્ટ કલર */
+    font-weight: 700 !important;                          /* અક્ષરો થોડા જાડા અને બોલ્ડ કર્યા */
+    letter-spacing: 0.5px;
+    padding: 6px 14px !important;
+}
+
+/* બેજની અંદર રહેલા ગ્રીન રાઉન્ડ ચેક આઇકોન માટે */
+.badge.bg-success-subtle .fa-circle-check {
+    color: #34d399 !important; /* આઇકોન પણ મસ્ત લાઈવ ગ્રીન ગ્લો કરશે */
+    margin-right: 4px;
+}
+/* 🎯 સિલેક્ટ ફાર્મર ડ્રોપડાઉનના ઝાંખા લેબલને એકદમ તેજસ્વી વ્હાઇટ કરવા માટે */
+.form-label.fw-bold.small.text-muted-custom,
+.card-custom label {
+    color: #f8fafc !important; /* એકદમ તેજસ્વી વ્હાઇટ કલર */
+    font-size: 14px !important; /* થોડું મોટું ફોન્ટ સાઈઝ */
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    margin-bottom: 10px !important;
+}
+
+/* ડ્રોપડાઉન બોક્સને પણ થોડું હાઇલાઇટ કરવા માટે */
+.form-select {
+    border: 2px solid #2d3238 !important; /* બોર્ડર થોડી જાડી કરી */
+    background-color: #0f1112 !important;
+    color: #ffffff !important;
+    padding: 10px !important;
+}
+/* 🎯 Audit Logs પેજ માટે લક્ઝરી વિઝિબિલિટી */
+.table-custom-fix th, .table-custom-fix td {
+    border: 1px solid #2d3238 !important;
+    padding: 14px !important;
+    color: #e2e8f0 !important;
+}
+
+.table-custom-fix th {
+    background-color: #0f1112 !important;
+    color: #a0aec0 !important;
+    font-weight: 700;
+}
+
+/* 🟢 Status Badge (Live Active Monitoring) */
+.badge.bg-danger {
+    background-color: #ef4444 !important;
+    padding: 6px 12px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+}
+
+/* 🎯 નવો ઉમેરેલો ભાગ: વધારાની ડિઝાઇન સુધારણા */
+.card-custom:hover {
+    border-color: var(--primary-green) !important;
+    transition: 0.3s;
+}
+
+.btn-success {
+    background: var(--gradient-green) !important;
+    border: none !important;
+}
+/* લોગો ટેક્સ્ટને સ્પષ્ટ અને તેજસ્વી કરવા માટે */
+.logo-main-text {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important; /* એકદમ સફેદ કલર */
+    background: transparent !important; /* બેકગ્રાઉન્ડ કાઢી નાખ્યું */
+    text-shadow: 0 0 10px rgba(40, 167, 69, 0.5); /* ગ્રીન ગ્લો ઇફેક્ટ */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.logo-main-text {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important; /* અહીંથી સફેદ કલર નક્કી થાય છે */
+    text-shadow: 0 0 10px rgba(40, 167, 69, 0.5); /* ગ્રીન ગ્લો ઇફેક્ટ */
+    letter-spacing: 1px;
+}
+/* 🎯 લેબલ અને ટેક્સ્ટને એકદમ તેજસ્વી સફેદ કરવા માટે */
+.text-muted, label {
+    color: #e2e8f0 !important; /* મસ્ત બ્રાઈટ વ્હાઈટ-ગ્રે કલર */
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+
+/* 🎯 ઇનપુટ બોક્સના અક્ષરો */
+.form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1 !important;
+}
+.css-logo {
+    width: 60px; /* થોડી સાઈઝ વધારી */
+    height: 60px;
+    background: linear-gradient(135deg, #28a745, #155724);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* આઇકોન સાઈઝ */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.hero-section p {
+    color: #ffffff !important; /* અક્ષરોને તેજસ્વી સફેદ કરશે */
+    font-size: 1.2rem;        /* અક્ષરો થોડા મોટા અને સ્પષ્ટ દેખાશે */
+    font-weight: 500;         /* અક્ષરોને થોડા ઘાટા કરશે */
+    opacity: 1 !important;    /* ઝાંખાપણું દૂર કરશે */
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* લિંક્સને બંને ખૂણે ગોઠવવા માટે */
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #2d3238; /* ઉપર એક પાતળી લાઇન માટે */
+}
+
+.footer-links a {
+    color: #a0aec0 !important; /* હળવો ગ્રે કલર */
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #28a745 !important; /* હોવર કરવા પર ગ્રીન કલર */
+}

@@ -1,0 +1,29 @@
+agroinputhub/
+├── config/
+│   └── db_config.php
+├── includes/
+│   ├── flang.php[cite: 2]
+│   └── PHPMailer-master/
+│       └── src/
+│           ├── Exception.php
+│           ├── PHPMailer.php
+│           └── SMTP.php
+├── farmerside/
+│   ├── dashboard.php
+│   ├── track_order.php
+│   ├── product_details.php
+│   ├── forgot_password.php[cite: 6]
+│   ├── staff_experts.php[cite: 3]
+│   ├── farmer_login.php
+│   └── css/
+│       └── style.css
+├── uploads/
+│   ├── profile/
+│   └── default.png
+└── assets/
+    ├── css/
+    │   └── dynamic_bg.css
+    ├── js/
+    │   └── dynamic_bg.js
+    └── images/
+        └── hero_banner.jpg[cite: 3]

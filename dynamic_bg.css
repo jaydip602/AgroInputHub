@@ -1,0 +1,52 @@
+/* Dynamic Background & Glassmorphism Overlay */
+.dynamic-bg-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.dynamic-bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 8s ease;
+    transform: scale(1);
+}
+
+.dynamic-bg-slide.active {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/* Dark Vignette Glass Overlay */
+.dynamic-bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(13, 15, 17, 0.78) 0%, rgba(10, 12, 14, 0.93) 100%);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Glassmorphism Card Enhancement */
+.card-custom, .luxury-identity-card, .glass-details-container, .luxury-security-card {
+    background: rgba(25, 28, 31, 0.88) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+}
